@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Circle Demo ES6</title>
+    <!-- Include your circle library -->
+    <script src="es6.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #canvas {
+            width: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a container for the canvas -->
+    <div id="canvas-container">
+        <!-- Canvas element where circles will be drawn -->
+        <canvas id="canvas" width="1500" height="800"></canvas>
+    </div>
+    <script>
+        // initialize cLib (circleLibrary) with 100 circles
+        let cLib = new Circles(100);
+    
+        // draw 100 circles on #canvas
+        cLib.draw_circles("canvas");
+        // any other code you need to make this work
+     </script>
+</body>
+</html>
